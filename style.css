@@ -6,4 +6,147 @@
 html, body {
   height: 100%;
   width: 100%;
+  color: white;
+}
+
+@font-face {
+  font-family: two;
+  src: url(./Fonts/font2.woff2);
+}
+@font-face {
+  font-family: three;
+  src: url(./Fonts/font3.woff2);
+}
+@font-face {
+  font-family: five;
+  src: url(./Fonts/font5.woff2);
+}
+main .page7 {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+main .page7 .box {
+  padding-left: 5em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+main .page7 .box .left {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 40%;
+}
+main .page7 .box .left h1 {
+  font-family: five;
+  font-size: 1.3em;
+  font-weight: 200;
+}
+main .page7 .box .left p {
+  line-height: 1.5;
+  font-size: 1.2em;
+  font-family: two;
+  font-weight: 100;
+}
+main .page7 .box .left .button .btn {
+  padding: 0.2em 0.8em;
+  border-radius: 3em;
+  font-size: 1em;
+  background-color: black;
+  color: white;
+  border: 2px solid #FF9100;
+  font-weight: 800;
+  font-family: two;
+}
+main .page7 .box .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+main .page7 .box .right img {
+  width: 80%;
+}
+main .page8 {
+  width: 100%;
+  background-color: black;
+}
+main .page8 .center {
+  font-family: two;
+  padding-top: 6em;
+  padding-bottom: 10em;
+  gap: 2em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .page8 .center h1 {
+  font-size: 2.8em;
+}
+main .page8 .center p {
+  font-size: 1.3em;
+  opacity: 0.7;
+}
+main .page8 .center .btn .btn1 {
+  color: white;
+  padding: 0.3em 0.9em;
+  font-size: 1.2em;
+  background-color: black;
+  border: 2px solid #FF9100;
+  border-radius: 3em;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  main .page7 .box {
+    flex-direction: column;
+    padding: 15vh 10vw;
+    gap: 5em;
+  }
+  main .page7 .box .left {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  main .page7 .box .left h1 {
+    font-size: 0.8em;
+    font-family: five;
+  }
+  main .page7 .box .left p {
+    text-align: center;
+    font-size: 1.1em;
+  }
+  main .page7 .box .left .button .btn {
+    font-size: 1.2em;
+    padding: 0.3em 1em;
+  }
+  main .page7 .box .right {
+    width: 100%;
+  }
+  main .page7 .box .right img {
+    width: 100%;
+  }
+  main .page8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .page8 .center {
+    text-align: center;
+    gap: 1em;
+  }
+  main .page8 .center h1 {
+    font-size: 2em;
+    font-weight: 100;
+  }
+  main .page8 .center p {
+    width: 70%;
+  }
+  main .page8 .center .btn {
+    margin-top: 1.5em;
+  }
 }/*# sourceMappingURL=style.css.map */
